@@ -41,16 +41,31 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start) {
-        return null;
+        String range = "";
+
+        for (int i = 0; i < start; i++){
+            range += Integer.toString(i);
+        }
+        return range;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String range = "";
+
+        for (int i = start; i < stop; i++){
+            range += Integer.toString(i);
+        }
+        return range;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String range = "";
+
+        for (int i = start; i < stop; i++){
+            range += Integer.toString(i);
+        }
+        return range;
     }
 
 
