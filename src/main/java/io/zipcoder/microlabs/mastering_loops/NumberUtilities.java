@@ -62,7 +62,7 @@ public class NumberUtilities {
     public static String getRange(int start, int stop, int step) {
         String range = "";
 
-        for (int i = start; i < stop; i++){
+        for (int i = start; i < stop; i+=step){
             range += Integer.toString(i);
         }
         return range;
@@ -70,6 +70,12 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String exponentResult = "";
+        int powerNum = 0;
+        for (int i = start; i < stop; i+=step){
+            powerNum = (int) Math.pow(i, exponent);
+            exponentResult += Integer.toString(powerNum);
+        }
+        return exponentResult;
     }
 }
