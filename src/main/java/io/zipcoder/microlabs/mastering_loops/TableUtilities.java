@@ -24,42 +24,42 @@ public class TableUtilities {
     }
 
     public static String getLargeMultiplicationTable() {
-        StringBuilder smallMulti = new StringBuilder();
+        StringBuilder largeMulti = new StringBuilder();
 
         for (int i = 1; i <= 10; i++){
             for (int l = 1; l <= 10; l++){
                 if ((i * l) < 10) {
-                    smallMulti.append(" ");
+                    largeMulti.append(" ");
                 }
                 if (l == 1){
-                    smallMulti.append(" ").append(i * l);
+                    largeMulti.append(" ").append(i * l);
                 }
                 else {
-                    smallMulti.append(" | ").append(i * l);
+                    largeMulti.append(" | ").append(i * l);
                 }
             }
-            smallMulti.append("\n");
+            largeMulti.append("\n");
         }
-        return smallMulti.toString();
+        return largeMulti.toString();
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        StringBuilder smallMulti = new StringBuilder();
+        StringBuilder tableMulti = new StringBuilder();
 
         for (int i = 1; i <= tableSize; i++){
             for (int l = 1; l <= tableSize; l++){
                 if ((i * l) < 10) {
-                    smallMulti.append(" ");
+                    tableMulti.append(" ");
                 }
                 if (l == 1){
-                    smallMulti.append(" ").append(i * l);
+                    tableMulti.append(" ").append(i * l);
                 }
                 else {
-                    smallMulti.append(" | ").append(i * l);
+                    tableMulti.append(" | ").append(i * l);
                 }
             }
-            smallMulti.append("\n");
+            tableMulti.append("\n");
         }
-        return smallMulti.toString();
+        return tableMulti.toString();
     }
 }
