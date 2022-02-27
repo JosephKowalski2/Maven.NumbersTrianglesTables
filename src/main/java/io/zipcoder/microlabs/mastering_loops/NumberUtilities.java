@@ -30,7 +30,14 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        return null;
+
+        String squareNumbers = "";
+
+        for (int i = start; i < stop; i += step){
+                squareNumbers += Integer.toString(i * i);
+        }
+        return squareNumbers;
+
     }
 
     public static String getRange(int start) {
