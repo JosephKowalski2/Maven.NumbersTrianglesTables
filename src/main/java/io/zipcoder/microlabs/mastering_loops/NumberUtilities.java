@@ -31,31 +31,34 @@ public class NumberUtilities {
 
     public static String getSquareNumbers(int start, int stop, int step) {
 
-        String squareNumbers = "";
-
-        for (int i = start; i < stop; i += step){
-                squareNumbers += Integer.toString(i * i);
-        }
-        return squareNumbers;
+//        String squareNumbers = "";
+//
+//        for (int i = start; i < stop; i += step){
+//                squareNumbers += Integer.toString(i * i);
+//        }
+//        return squareNumbers;
+        return NumberUtilities.getExponentiations(start, stop, step, 2); //able to it better
 
     }
 
     public static String getRange(int start) {
-        String range = "";
-
-        for (int i = 0; i < start; i++){
-            range += Integer.toString(i);
-        }
-        return range;
+//        String range = "";
+//
+//        for (int i = 0; i < start; i++){
+//            range += Integer.toString(i);
+//        }
+//        return range;
+        return NumberUtilities.getRange(0, start, 1); //can simplify duplicate code
     }
 
     public static String getRange(int start, int stop) {
-        String range = "";
-
-        for (int i = start; i < stop; i++){
-            range += Integer.toString(i);
-        }
-        return range;
+//        String range = "";
+//
+//        for (int i = start; i < stop; i++){
+//            range += Integer.toString(i);
+//        }
+//        return range;
+        return NumberUtilities.getRange(start, stop, 1);
     }
 
 
@@ -63,7 +66,7 @@ public class NumberUtilities {
         String range = "";
 
         for (int i = start; i < stop; i+=step){
-            range += Integer.toString(i);
+            range += i;
         }
         return range;
     }
